@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Assessment | CyberMatch</title>
+</head>
+<body>
+
+    <!-- Consistent Site Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/cybermatch-logo.png" alt="CyberMatch Logo" class="site-logo">
+            <span class="logo-text">CyberMatch</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assessment.html" class="active">Assessment</a></li>
+                <li><a href="threat-index.html">Threat Index</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Asymmetric Main Container Layout: CSS Grid (3fr 1fr) -->
+    <div class="sidebar-layout">
+        
+        <!-- Left Column: Main Interactive Quiz Content (3fr) -->
+        <main class="main-content">
+            <h1>Personalized Security Assessment</h1>
+            <p>Answer these short, engaging questions about your technology footprint to help us build your customized security profile. We evaluate your physical devices, data handling sensitivity, and financial parameters.</p>
+            
+            <!-- Required Image 1: Progress-Tracking Infographic Wizard layout -->
+            <div class="wizard-progress-container">
+                <img src="images/progress-wizard.png" alt="Infographic progress tracking bar showing Step 1 of 3 completed" class="progress-img">
+            </div>
+
+            <!-- Mock Quiz Form Interface -->
+            <form class="assessment-form" onsubmit="return false;">
+                <fieldset>
+                    <legend>Step 1: Your Digital Footprint</legend>
+                    
+                    <label for="device-type">What is your primary computing device?</label>
+                    <select id="device-type" name="device-type">
+                        <option value="windows">Windows PC / Laptop</option>
+                        <option value="mac">Apple Mac / MacBook</option>
+                        <option value="mobile">Mobile Devices Only (iOS/Android)</option>
+                    </select>
+
+                    <p>What data matters most to you? (Select all that apply)</p>
+                    <label><input type="checkbox" name="data" value="financial"> Banking & Financial Records</label><br>
+                    <label><input type="checkbox" name="data" value="photos"> Personal Photos & Memories</label><br>
+                    <label><input type="checkbox" name="data" value="work"> Remote Work Documents & Client Data</label>
+                </fieldset>
+                <button type="button" class="cta-button">Next Step</button>
+            </form>
+        </main>
+
+        <!-- Right Column: Contextual Sidebar Info (1fr) -->
+        <aside class="sidebar">
+            <h3>Why these questions matter</h3>
+            <p>Different operating systems have entirely different vulnerability vectors. By indicating your primary devices, we prevent recommending unnecessary, bloated software packages.</p>
+            
+            <!-- Required Image 2: Illustrative User Type Icon Grid -->
+            <div class="user-profiles-grid">
+                <img src="images/user-profiles.png" alt="Icon grid illustrating target user types: The Remote Professional and The Small Shop Owner" class="sidebar-img">
+            </div>
+        </aside>
+    </div>
+
+    <!-- Consistent Site Footer -->
+    <footer>
+        <p>&copy; 2026 CyberMatch. All rights reserved. | Protecting Your Digital Footprint.</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="threat-index.html">Threat Level Index</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
